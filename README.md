@@ -1,6 +1,6 @@
 # Example project for PVC
 
-A minimal [M]VC framework for learning and refreshing OOP in PHP. 
+A minimal [M]VC framework for learning and refreshing OOP in PHP.  
 Just for my own experimentation and without any expectations.
 
 ## Installation
