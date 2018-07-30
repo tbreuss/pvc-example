@@ -1,0 +1,6 @@
+{
+  "name": "tebe/pvc-example",
+  "require": {
+    "tebe/pvc": "@dev"
+  }
+}
