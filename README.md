@@ -7,13 +7,13 @@ Just for my own experimentation and without any expectations.
 
 Composer is your friend.
 
-$ composer create-project tebe/pvc-example:@dev myproject
+    $ composer create-project tebe/pvc-example:@dev myproject
 
 ## Running
 
-$ cd myproject/public
-$ php -S localhost:9999
+    $ cd myproject/public
+    $ php -S localhost:9999
 
 Start your web browser and open <http://localhost:9999>
 
-Ready to go!
+You're ready to go!
