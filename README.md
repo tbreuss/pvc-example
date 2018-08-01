@@ -16,4 +16,13 @@ Composer is your friend.
 
 Start your web browser and open <http://localhost:9999>
 
+### Basic Auth Middleware
+
+The example is using some middlewares.
+
+For the Basic Auth middleware the Login details are:
+
+    Username: user
+    Password: pass 
+
 You're ready to go!
