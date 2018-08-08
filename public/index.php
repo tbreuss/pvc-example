@@ -12,13 +12,15 @@ try {
 
     $config = require "../config/main.php";
     Application::instance($config)
-        ->addMiddleware(new HtmlMiddleware('HTML Prepend 1', HtmlMiddleware::MODE_PREPEND))
-        ->addMiddleware(new HtmlMiddleware('HTML Prepend 2', HtmlMiddleware::MODE_PREPEND))
-        ->addMiddleware(new HtmlMiddleware('HTML Append 2', HtmlMiddleware::MODE_APPEND))
-        ->addMiddleware(new HtmlMiddleware('HTML Append 1', HtmlMiddleware::MODE_APPEND))
-        ->addMiddleware(new HeaderMiddleware('X-Pvc', '@dev'))
-        ->addMiddleware(new ResponseTimeMiddleware())
-        ->addMiddleware(new HttpBasicAuthMiddleware(['user' => 'pass']))
+        ->setMiddleware([
+            new HtmlMiddleware('HTML Prepend 1', HtmlMiddleware::MODE_PREPEND),
+            new HtmlMiddleware('HTML Prepend 2', HtmlMiddleware::MODE_PREPEND),
+            new HtmlMiddleware('HTML Append 2', HtmlMiddleware::MODE_APPEND),
+            new HtmlMiddleware('HTML Append 1', HtmlMiddleware::MODE_APPEND),
+            new HeaderMiddleware('X-Pvc', '@dev'),
+            new ResponseTimeMiddleware(),
+            new HttpBasicAuthMiddleware(['user' => 'pass'])
+        ])
         ->run();
 
 } catch (Throwable $t) {
