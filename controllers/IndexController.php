@@ -14,7 +14,7 @@ class IndexController extends Controller
         return $this->render('features');
     }
 
-    public function contactAction()
+    public function contactAction(int $a, int $b)
     {
         return $this->render('contact');
     }

@@ -1,58 +1,67 @@
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Cover Template for Bootstrap</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/cover.css">
+    <title>PVC Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="/css/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="/css/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-
 <body>
-
-<div class="site-wrapper">
-
-    <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-            <header class="masthead clearfix">
-                <div class="inner">
-                    <h3 class="masthead-brand">Cover</h3>
-                    <nav class="nav nav-masthead">
-                        <a class="nav-link active" href="<?= $this->url(['index/index']) ?>">Home</a>
-                        <a class="nav-link" href="<?= $this->url(['index/features']) ?>">Features</a>
-                        <a class="nav-link" href="<?= $this->url(['index/contact', 'a' => 1, 'b' => 2, '#' => 'anchor']) ?>">Contact</a>
-                    </nav>
-                </div>
-            </header>
-
-            <main role="main" class="inner cover">
-                <?= $content ?>
-            </main>
-
-            <footer class="mastfoot">
-                <div class="inner">
-                    <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-                </div>
-            </footer>
-
+<div class="container">
+    <div class="pure-g header">
+        <div class="pure-u-1-3">
+            <a class="pure-menu-heading" href="<?= $this->url(['/']) ?>">PVC<span>Example</span></a>
         </div>
-
+        <div class="pure-u-2-3">
+            <div class="pure-menu pure-menu-horizontal" style="text-align:right">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a class="pure-menu-link" href="<?= $this->url(['index/index']) ?>">Home</a></li>
+                    <li class="pure-menu-item"><a class="pure-menu-link" href="<?= $this->url(['index/features']) ?>">Features</a></li>
+                    <li class="pure-menu-item"><a class="pure-menu-link" href="<?= $this->url(['index/contact', 'a' => 1, 'b' => 2, '#' => 'anchor']) ?>">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
 </div>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<?= $content ?>
+<div class="footer">
+    <div class="container">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-3-5 footer-about">
+                <h3 class="footer-about__heading">About PVC Example</h3>
+                <p class="footer-about__text">
+                    A simple example project based on PVC, a minimal [M]VC framework.
+                    Just for my own experimentation and without any expectations.
+                </p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-5 footer-links">
+                <h3 class="footer-links__heading">Links</h3>
+                <ul class="footer-links__list">
+                    <li><a target="_blank" href="http://www.tebe.ch">About me</a></li>
+                </ul>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-5 footer-tools">
+                <h3 class="footer-tools__heading">Toolset</h3>
+                <ul class="footer-tools__list">
+                    <li><a target="_blank" href="https://purecss.io">Pure.css</a></li>
+                    <li><a target="_blank" href="https://github.com/tbreuss/pvc">PVC Framework</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-ruler">
+        <div class="pure-g">
+            <div class="pure-u-1 footer-copyright">
+                A tiny <a target="_blank" href="https://www.tebe.ch">tebe.ch</a> project
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
