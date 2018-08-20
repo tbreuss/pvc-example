@@ -7,7 +7,7 @@ Just for my own experimentation and without any expectations.
 
 Composer is your friend.
 
-    $ composer create-project tebe/pvc-example:@dev myproject
+    $ composer create-project tebe/pvc-example myproject
 
 ## Running
 
