@@ -1,20 +1,20 @@
 <?php
 
-require "../vendor/autoload.php";
+require '../vendor/autoload.php';
 
-require "../library/HttpBasicAuthMiddleware.php";
-require "../library/HeaderMiddleware.php";
-require "../library/HtmlMiddleware.php";
-require "../library/ResponseTimeMiddleware.php";
-require "../library/AuthLoggingEventHandler.php";
+require '../library/HttpBasicAuthMiddleware.php';
+require '../library/HeaderMiddleware.php';
+require '../library/HtmlMiddleware.php';
+require '../library/ResponseTimeMiddleware.php';
+require '../library/AuthLoggingEventHandler.php';
 
 use Tebe\Pvc\Application;
 use Zend\Diactoros\ServerRequestFactory;
 
 try {
 
+    $config = require '../config/main.php';
     $request = ServerRequestFactory::fromGlobals();
-    $config = require "../config/main.php";
 
     Application::instance()
         ->setConfig($config)

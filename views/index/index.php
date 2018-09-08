@@ -1,3 +1,4 @@
+<?php $this->pageTitle = 'Home' ?>
 <div class="hero">
     <div class="container">
         <h1 class="hero__heading">Howdy</h1>

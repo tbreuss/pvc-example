@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>PVC Example</title>
+    <title><?= $this->pageTitle ?> / PVC Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="/css/pure-min.css">
