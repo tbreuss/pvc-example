@@ -20,7 +20,7 @@ try {
         ->setConfig($config)
         ->setRequest($request)
         ->addEventHandler('onRun', new AuthLoggingEventHandler(__DIR__ . '/auth.log'))
-        ->setMiddleware([
+        ->setMiddlewares([
             new HtmlMiddleware('<!-- HTML Before 1 -->', HtmlMiddleware::MODE_PREPEND),
             new HtmlMiddleware('<!-- HTML After 3 -->', HtmlMiddleware::MODE_APPEND),
             new HtmlMiddleware('<!-- HTML After 2 -->', HtmlMiddleware::MODE_APPEND),
