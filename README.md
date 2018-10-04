@@ -1,7 +1,6 @@
 # Example project for PVC
 
-A simple example project based on [PVC](https://github.com/tbreuss/pvc), a minimal [M]VC framework.  
-Just for my own experimentation and without any expectations.
+A simple example project based on [PVC](https://github.com/tbreuss/pvc), a minimal P[HP] [M]VC framework.  
 
 ## Installation
 
