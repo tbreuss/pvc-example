@@ -3,7 +3,7 @@
   "license": "MIT",  
   "minimum-stability": "dev",
   "require": {
-    "tebe/pvc": "^0.7.0",
+    "tebe/pvc": "^0.8",
     "zendframework/zend-diactoros": "^1.8"
   }
 }
