@@ -1,5 +1,4 @@
 {
-  "name": "tebe/pvc-example",
   "license": "MIT",  
   "require": {
     "tebe/pvc": "^0.8",
